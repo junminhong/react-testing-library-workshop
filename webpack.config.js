@@ -15,6 +15,15 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.css$/,
+        include: path.resolve(__dirname, 'src'),
+        use: [
+          'style-loader',
+          'css-loader', // Resolves CSS imports
+          'postcss-loader', // Applies PostCSS transformations (Tailwind CSS)
+        ],
+      },
     ],
   },
   resolve: {

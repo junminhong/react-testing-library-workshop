@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './container/Home'
-import NotFound from './container/NotFound'
+import Home from './containers/Home'
+import NotFound from './containers/NotFound'
 import {
   BrowserRouter,
   Routes,
   Route,
 } from 'react-router-dom'
+import './global.css'
 
 const App = () => {
   return (
